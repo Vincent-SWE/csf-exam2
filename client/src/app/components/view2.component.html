@@ -1,0 +1,27 @@
+<div *ngIf="archives">
+    <div>
+        <table >
+            <tr>
+                <td>Name:</td>
+                <td>{{archives.name}}</td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td>Title</td>
+                <td>{{archives.title}}</td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td>Comments</td>
+                <td>{{archives.comments}}</td>
+            </tr>
+        </table>
+        <img src="{{archives.image}}" height="200" width="200">
+        <img src="{{archives.image2}}" height="200" width="200">
+    </div>
+
+<div>
+    <a [routerLink]="[ '/' ]">
+        <button type="button">Back</button>
+    </a>
+</div>

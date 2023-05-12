@@ -1,0 +1,49 @@
+<h2>View 1</h2>
+
+<form [formGroup]="view1Form" (ngSubmit)="createView1Form()">
+    <table>
+
+        <tr>
+          <td>Name: </td>
+          <td>
+            <input type="text" size="30" placeholder="Name" formControlName="name">
+          </td>
+        </tr>
+
+        <tr>
+          <td>Title: </td>
+          <td>
+            <input type="text" size="30" placeholder="Title" formControlName="title">
+          </td>
+        </tr>
+
+        <tr>
+          <td>Comments: </td>
+          <td>
+            <input type="text" size="30" placeholder="Your comments in here" formControlName="comments">
+          </td>
+        </tr>
+
+        <tr>
+            <td>Archive: </td>
+            <td>
+              <input type="file" size="30" placeholder="ZIP archive of photos" formControlName="archive" accept="application/zip">
+            </td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td>
+                <button type="button">Cancel</button>
+                <button type="submit" >Submit</button>
+            </td>
+          </tr>
+
+      </table>
+
+
+
+</form>
+
+
+<!-- [disabled]="!view1Form.controls['name'].value || !view1Form.controls['title'].value || !view1Form.controls['archive'].value" -->
